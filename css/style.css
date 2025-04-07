@@ -33,5 +33,15 @@ p{
     font-family:'Sometype Mono', monospace;
     padding: 15px 15px 0;
     text-align: left;
+    margin-bottom: 0px;
+    color: gray;
     
+}
+
+h4{
+    font-family: 'Edu Tas Beginner', sans-serif ;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: left;
+    padding: 0px 15px 0;
 }
