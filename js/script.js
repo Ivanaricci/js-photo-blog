@@ -12,11 +12,16 @@ function createCard(card) {
             </div>`
 }
 
-endopoint = `https://lanciweb.github.io/demo/api/pictures/`
+endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 
 axios.get(endpoint).then((resp) =>{
-    const cards = resp.data.response;
+    console.log(resp)
+    const cards = resp.data;
+    console.log(cards)
 
-    
+    for(let i=0; i<cards.length; i++){
+        const cardHtml = createCard(cards[i]);
+        card.innerHTML += cardHtml;
+    }
 })
 
