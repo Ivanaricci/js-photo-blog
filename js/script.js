@@ -3,7 +3,7 @@ const card = document.getElementById('card')
 
 
 function createCard(card) {
-    return `<div class="col-lg-4 my-2">
+    return `<div class="col-lg-4 col-md-6 col-sm-12 my-2">
                 <div class="square">
                     <img class="img" src="${card.url}" alt="">
                     <p>${card.date}</p>
