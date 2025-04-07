@@ -1,0 +1,13 @@
+
+/* header */
+
+h1{
+    font-family: 'Edu Tas Beginner', sans-serif ;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+header{
+    background-image: url("../assets_day1/img/wall.png");
+}
