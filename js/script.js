@@ -5,7 +5,8 @@ const card = document.getElementById('card')
 function createCard(card) {
     return `<div class="col-lg-4 col-md-6 col-sm-12 my-2">
                 <div class="square">
-                    <img class="img" src="${card.url}" alt="">
+                    <img class="point" src="../img/img/pin.svg" alt="">
+                    <img class="img img-fluid" src="${card.url}" alt="">
                     <p>${card.date}</p>
                     <h4>${card.title}</h4>
                 </div>
