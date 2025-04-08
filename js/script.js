@@ -5,6 +5,7 @@ const overlay = document.querySelector('.overlay')
 const btn = document.querySelector('.btn-overlay')
 const container = document.querySelector('all-container')
 const imgOverlay = document.querySelector('.img-overlay')
+const opacity = document.querySelector('.opacity-all')
 
 
 
@@ -42,6 +43,8 @@ axios.get(endpoint).then((resp) =>{
         image.addEventListener('click', (event) => {
             overlay.classList.remove('d-none');
             imgOverlay.src = event.target.src;
+            opacity.classList.remove('d-none');
+
         })
     })
     
@@ -57,7 +60,8 @@ axios.get(endpoint).then((resp) =>{
 
 
 btn.addEventListener('click', () => {
-    overlay.classList.add('d-none')
+    overlay.classList.add('d-none');
+    opacity.classList.add('d-none');
 })
 
 
