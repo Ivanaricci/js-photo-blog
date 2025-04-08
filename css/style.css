@@ -112,3 +112,24 @@ h4{
     }
    
 }
+
+.col-card{
+    position: relative;
+}
+
+.square:hover{
+    rotate: 10deg;
+    width: 110%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.175);
+    border: 1px solid gray;
+}
+
+.square:hover .point{
+    display: none;
+}
+
+.img-card{
+    cursor: pointer;
+}

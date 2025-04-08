@@ -11,7 +11,7 @@ const opacity = document.querySelector('.opacity-all')
 
 
 function createCard(card) {
-    return `<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+    return `<div class=" col-card col-lg-4 col-md-6 col-sm-12 my-2">
                 <div class="square">
                     <img class="point img-fluid" src="./assets_day1/img/pin.svg" alt="">
                     <img class="img img-fluid img-card" src="${card.url}" alt="">
