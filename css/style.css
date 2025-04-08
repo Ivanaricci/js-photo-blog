@@ -70,12 +70,12 @@ h4{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 100px ;
+    top: 150px ;
     z-index: 1;
 }
 
 .img-overlay{
-    width: 60vw;
+    width: 40vw;
 }
 
 .btn{
@@ -115,6 +115,10 @@ h4{
 
 .col-card{
     position: relative;
+}
+
+.btn:hover{
+    background-color: white;
 }
 
 .square:hover{
