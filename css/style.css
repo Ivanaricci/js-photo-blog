@@ -59,6 +59,32 @@ h4{
 }
 
 
+
+/* overlay */
+
+.all-container{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px ;
+}
+
+.img-overlay{
+    width: 60vw;
+}
+
+
+
+
+
+
+
+/* mediaquery */
+
 @media (max-width: 768px) {
     h1{
         font-size: 70px;
