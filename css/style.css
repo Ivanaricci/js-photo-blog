@@ -77,7 +77,11 @@ h4{
     width: 60vw;
 }
 
-
+.btn{
+    background-color: rgb(235, 235, 235);
+    box-shadow: 3px 3px rgba(91, 91, 91, 0.405);
+    margin-bottom: 30px;
+}
 
 
 
