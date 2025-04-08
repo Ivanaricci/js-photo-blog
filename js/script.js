@@ -3,6 +3,9 @@ const card = document.getElementById('card')
 console.log(card)
 const overlay = document.querySelector('.overlay')
 const btn = document.querySelector('.btn-overlay')
+const container = document.querySelector('all-container')
+const imgOverlay = document.querySelector('.img-overlay')
+
 
 
 
@@ -18,8 +21,11 @@ function createCard(card) {
 }
 
 
+console.log(createCard)
 
-endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
+
+
+const endpoint = 'https://lanciweb.github.io/demo/api/pictures/'
 
 axios.get(endpoint).then((resp) =>{
     console.log(resp)
@@ -29,13 +35,25 @@ axios.get(endpoint).then((resp) =>{
     for(let i=0; i<cards.length; i++){
         const cardHtml = createCard(cards[i]);
         card.innerHTML += cardHtml;
-    }
+    };
+
+    const images =document.querySelectorAll('.img-card');
+    images.forEach((image) => {
+        image.addEventListener('click', (event) => {
+            overlay.classList.remove('d-none');
+            imgOverlay.src = event.target.src;
+        })
+    })
+    
 })
 
 
-    card.addEventListener('click',() => {
-        overlay.classList.remove('d-none')
-     })
+
+
+
+
+
+ 
 
 
 btn.addEventListener('click', () => {
